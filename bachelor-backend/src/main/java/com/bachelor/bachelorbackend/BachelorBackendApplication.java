@@ -1,13 +1,12 @@
 package com.bachelor.bachelorbackend;
 
-import ch.qos.logback.classic.BasicConfigurator;
-import employee.service.EmployeeService;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackageClasses = {EmployeeService.class}, exclude = MongoAutoConfiguration.class)
+@SpringBootApplication(exclude = MongoAutoConfiguration.class)
+@ComponentScan({"com.bachelor.bachelorbackend", "com.bachelor.bachelorbl"})
 public class BachelorBackendApplication {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package employee.service;
+package com.bachelor.bachelorbl.employee.service;
 
 import org.json.JSONObject;
 
