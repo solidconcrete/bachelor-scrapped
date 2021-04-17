@@ -9,14 +9,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-@CommonsLog
+//@CommonsLog
 public class EmployeeServiceImpl implements EmployeeService {
 
 
     @Override
     public ArrayList<JSONObject> getEmployees() {
-        MongoClient mongoClient = MongoClients.create("mongodb+srv://bachelor:pass@cluster0.hjnrv.mongodb.net");
-        MongoDatabase database = mongoClient.getDatabase("clientOneDB");
+//        MongoClient mongoClient = MongoClients.create("mongodb+srv://bachelor:pass@cluster0.hjnrv.mongodb.net");
+//        MongoDatabase database = mongoClient.getDatabase("clientOneDB");
         return null;
     }
 }
