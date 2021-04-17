@@ -18,18 +18,27 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <lombok.version>1.18.20</lombok.version>
+        <json.version>20210307</json.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <scope>provided</scope>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${json.version}</version>
         </dependency>
     </dependencies>
 
     <modules>
         <module>bachelor-backend</module>
+        <module>bachelor-bl</module>
     </modules>
 
 </project>

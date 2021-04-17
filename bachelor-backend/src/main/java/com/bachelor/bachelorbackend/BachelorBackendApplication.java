@@ -1,5 +1,6 @@
 package com.bachelor.bachelorbackend;
 
+import ch.qos.logback.classic.BasicConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
