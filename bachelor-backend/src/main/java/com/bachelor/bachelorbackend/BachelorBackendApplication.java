@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(exclude = MongoAutoConfiguration.class)
-@ComponentScan({"com.bachelor.bachelorbackend", "com.bachelor.bachelorbl"})
+@ComponentScan({"com.bachelor"})
 public class BachelorBackendApplication {
 
     public static void main(String[] args) {
